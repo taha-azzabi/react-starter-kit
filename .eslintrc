@@ -11,7 +11,8 @@
     //To recognize global window Object, for instance without this the window variable will show
     //an error: "window" is not defined
     "browser": true,
-    "es6": true
+    "es6": true,
+    "node": true
   },
   "rules": {
     //To show prettier errors in ESLint and a maximum line length rule
