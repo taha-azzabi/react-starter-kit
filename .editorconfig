@@ -1,0 +1,24 @@
+# Plus d'information https://editorconfig.org/
+
+# Dans VSCode, l'extension "EditorConfig" doit être installée afin que les paramètres indiqués
+# ci-dessous soient pris en consédédiration.
+# Lien d'extension https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+
+
+
+# S'assurer qu'aucun paramètre de fichier .editorconfig
+# de niveau supérieur n'est appliqué au dossier
+root = true
+
+[*]
+# Force charset utf-8
+charset = utf-8
+#Indent Type
+indent_style = space
+indent_size = 2
+tab_width = 2
+end_of_line = lf #(on save)
+# Supprimer tous les caractères d'espacement précédant de nouvelle ligne
+# Trailing space is all whitespace located at the end of a line
+trim_trailing_whitespace = true #(on save)
+insert_final_newline = true #(on save)
