@@ -6,7 +6,7 @@
   "extends": ["airbnb", "prettier"],
   // Nous avons ajouter ici prettier pour permettre d'appliquer individuellement
   // la règle "prettier/prettier": ["error"],
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "react"],
   "env": {
     //To recognize global window Object, for instance without this the window variable will show
     //an error: "window" is not defined
@@ -16,6 +16,8 @@
   },
   "rules": {
     //To show prettier errors in ESLint and a maximum line length rule
-    "prettier/prettier": ["error"]
+    "prettier/prettier": ["error"],
+    "react/forbid-prop-types": 0,
+    "react/require-default-props": 0
   }
 }
