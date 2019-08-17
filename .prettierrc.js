@@ -2,6 +2,7 @@
   prettier.config.js or .prettierrc.js
   // Assurer que les paramètres ci-dessous sont configurer dans dans Visual Studio Code
     "editor.formatOnSave": true
+    "eslint.autoFixOnSave": true
 */
 module.exports = {
   /*
