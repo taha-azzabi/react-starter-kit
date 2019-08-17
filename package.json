@@ -67,7 +67,7 @@
     "src/**/*.{js,jsx}": [
       "eslint --fix",
       "pretty-quick --staged",
-      "git add"
+      "git add --force"
     ],
     "*.json": [
       "prettier --write",
