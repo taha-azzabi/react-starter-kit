@@ -3,7 +3,7 @@
   // for instance without babel-eslint the import or export statements show an error
   // because they are a JavaScript ES6 features
   "parser": "babel-eslint",
-  "extends": ["airbnb","prettier"],
+  "extends": ["airbnb", "prettier"],
   // Nous avons ajouter ici prettier pour permettre d'appliquer individuellement
   // la règle "prettier/prettier": ["error"],
   "plugins": ["prettier"],
@@ -15,7 +15,6 @@
   },
   "rules": {
     //To show prettier errors in ESLint and a maximum line length rule
-    "prettier/prettier": ["error"],
-    "react/prop-types": 0
+    "prettier/prettier": ["error"]
   }
 }

@@ -11,7 +11,7 @@ module.exports = {
     https://recology.info/2019/02/trailing-commas/
     https://medium.com/@nikgraf/why-you-should-enforce-dangling-commas-for-multiline-statements-d034c98e36f8
   */
-  trailingComma: all,
+  trailingComma: 'all',
   singleQuote: true,
   semi: true,
   tabWidth: 2,

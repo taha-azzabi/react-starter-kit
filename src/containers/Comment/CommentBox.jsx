@@ -8,9 +8,9 @@ class CommentBox extends React.Component {
     comment: '',
   };
 
-  handleChange = (event) => this.setState({ comment: event.target.value });
+  handleChange = event => this.setState({ comment: event.target.value });
 
-  handleSubmit = (event) => {
+  handleSubmit = event => {
     event.preventDefault();
     const { comment } = this.state;
     // eslint-disable-next-line react/destructuring-assignment
