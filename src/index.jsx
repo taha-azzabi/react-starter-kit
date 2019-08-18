@@ -1,8 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 
-import CommentPage from "./containers/Comment";
-import Root from "./Root";
+import App from './containers/App';
+import Root from './Root';
 
 ReactDOM.render(
   <Root>
@@ -10,6 +11,5 @@ ReactDOM.render(
       <Route path="/" component={App} />
     </BrowserRouter>
   </Root>,
-  document.getElementById("root")
-
+  document.getElementById('root'),
 );

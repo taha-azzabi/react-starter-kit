@@ -9,9 +9,9 @@ const port = process.env.PORT || 3000;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 /**
-  *  Améliorer les messages de la console, ce module Webpack permettre de
-  *  générer des messages d'erreur est waring d'une façons simple et claire.
-*/
+ *  Améliorer les messages de la console, ce module Webpack permettre de
+ *  générer des messages d'erreur est waring d'une façons simple et claire.
+ */
 
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 
