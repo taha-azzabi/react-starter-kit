@@ -21,7 +21,9 @@ Nous utilisons le guide de style [Storybook](https://storybook.js.org/) pour org
 
 Cela permettrait de visualiser dans un seul endroit le guide de style utilisé (topographie, couleurs, mise en forme...) pour les différents composants.
 
-Pour lancer le storyBook , veuillez saisir la commande suivante: yarn storybook
+Pour lancer le storyBook , veuillez saisir la commande suivante: 
+
+```` yarn storybook ````
 
 Voir plus de détails dans la section [Storybook](https://storybook.js.org/)
 
@@ -45,17 +47,17 @@ git clone https://github.com/taha-azzabi/react-starter-kit.git
 2.  Installation des dépendances Npm
     
 
-yarn ou npm i
+````yarn```` ou ````npm i````
 
 3.  Lancer le serveur de développement:
     
 
-yarn start ou npm start
+````yarn start ou npm start````
 
 4.  Compiler une version optimisée pour le déploiement en production
     
 
-yarn build ou npm build
+````yarn build```` ou ````npm build````
 
 ## Code qualité et mise en forme du code(Linting):
 
@@ -82,7 +84,7 @@ Cette partie est très utile et ça permettrait de voir rapidement et à temps r
 
 1.  Installer l'extension [Prettier vscode extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) pour rendre Prettier le formateur par défaut le code JavaScript
     
-2.  Activer l’option "editor.formatOnSave": true,"eslint.autoFixOnSave": true dans les préférences.
+2.  Activer l’option ````"editor.formatOnSave": true,"eslint.autoFixOnSave": true```` dans les préférences.
     
 
 ## TODO
@@ -93,6 +95,6 @@ Cette partie est très utile et ça permettrait de voir rapidement et à temps r
     
 -   SSR: Server side rendering
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3OTI3MDQwNywxOTQwNjgxNDU2LDczMD
-k5ODExNl19
+eyJoaXN0b3J5IjpbLTE0NTc3ODAzNzcsMTk0MDY4MTQ1Niw3Mz
+A5OTgxMTZdfQ==
 -->
