@@ -1,11 +1,11 @@
 import React from 'react';
 import StyledHeading from './StyledHeading';
 
-const Heading = (props) => {
+const Heading = props => {
   const { level, color, children } = props;
   return (
     <StyledHeading as={`h${level}`} level={level} color={color}>
-      {children }
+      {children}
     </StyledHeading>
   );
 };
