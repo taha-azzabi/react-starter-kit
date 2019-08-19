@@ -1,0 +1,24 @@
+{
+  // Babel-eslint is used here to lint all valid Babel code (New JavaScript future)
+  // for instance without babel-eslint the import or export statements show an error
+  // because they are a JavaScript ES6 features
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier"],
+  // Nous avons ajouter ici prettier pour permettre d'appliquer individuellement
+  // la règle "prettier/prettier": ["error"],
+  "plugins": ["prettier", "react"],
+  "env": {
+    //To recognize global window Object, for instance without this the window variable will show
+    //an error: "window" is not defined
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "rules": {
+    //To show prettier errors in ESLint and a maximum line length rule
+    "prettier/prettier": ["error"],
+    "react/forbid-prop-types": 0,
+    "react/require-default-props": 0,
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
+  }
+}
