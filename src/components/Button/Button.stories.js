@@ -5,13 +5,14 @@ import { ThemeProvider } from 'styled-components';
 import theme from '../../theme/color';
 import Button from './index';
 
-console.log(theme);
 const BasicButton = () => {
   return (
     <>
       <Button>Par défaut</Button>
       <Button disabled>Désactiver</Button>
-      <Button type="submit">Type Submit</Button>
+      <Button type="submit" color="blue">
+        Type Submit
+      </Button>
     </>
   );
 };

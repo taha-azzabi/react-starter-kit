@@ -1,9 +1,12 @@
+import styled, { css } from 'styled-components';
 import { Button } from 'react-bootstrap';
-import styled from 'styled-components';
 
+const backgroundStyle = css`
+  background-color: ${props => props.color};
+`;
 const StyledButton = styled(Button)`
   cursor: pointer;
-  background-color: ${props => props.theme.color};
+  ${props => props.color && backgroundStyle};
 `;
 
 export default StyledButton;
