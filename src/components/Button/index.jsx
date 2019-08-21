@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import StyledButton from './StyledButton';
 
-const Button = prop => {
-  const { children, type, disabled } = prop;
+const Button = props => {
+  const { children, type, disabled } = props;
   return (
     <StyledButton type={type} disabled={disabled}>
       {children}
@@ -11,7 +11,7 @@ const Button = prop => {
   );
 };
 
-Button.prototype = {
+Button.propTypes = {
   children: PropTypes.node.isRequired,
   type: PropTypes.string,
   disabled: PropTypes.bool,

@@ -1,8 +1,8 @@
+import { Button } from 'reactstrap';
 import styled from 'styled-components';
 
-const StyledButton = styled.button`
+const StyledButton = styled(Button)`
   cursor: pointer;
-  background: transparent;
 `;
 
 export default StyledButton;
