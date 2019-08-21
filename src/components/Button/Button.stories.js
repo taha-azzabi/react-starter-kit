@@ -1,8 +1,11 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { ThemeProvider } from 'styled-components';
+import theme from '../../theme/color';
 import Button from './index';
 
+console.log(theme);
 const BasicButton = () => {
   return (
     <>
@@ -13,4 +16,6 @@ const BasicButton = () => {
   );
 };
 
-storiesOf('Bouton', module).add('Par défaut', () => <BasicButton />);
+storiesOf('Bouton', module)
+  .addDecorator(story => <ThemeProvider theme={theme}>{story()}</ThemeProvider>)
+  .add('Par défaut', () => <BasicButton />);
