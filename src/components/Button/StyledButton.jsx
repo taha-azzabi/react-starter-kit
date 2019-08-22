@@ -3,9 +3,13 @@ import { Button } from 'react-bootstrap';
 
 const backgroundStyle = css`
   background-color: ${props => props.color};
+  border-color: ${props => props.color};
+  &:hover {
+    background: red;
+    color: #fff;
+  }
 `;
 const StyledButton = styled(Button)`
-  cursor: pointer;
   ${props => props.color && backgroundStyle};
 `;
 
