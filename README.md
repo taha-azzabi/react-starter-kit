@@ -86,6 +86,27 @@ Cette partie est très utile et ça permettrait de voir rapidement et à temps r
     
 2.  Activer l’option ````"editor.formatOnSave": true,"eslint.autoFixOnSave": true```` dans les préférences.
     
+## Tests unitaires:
+Nous utilisons Jest  pour tester les composants  ReactJs, c'est une solution complète ou plutôt un  famerwork  pour le testing qui est développé par Facebook.  
+Jest  possède son propre programme d’exécution des tests(test  runner)  et aussi un utilité pour l'assertion via  `expect`  
+
+**Assertion** : Vérifier si des valeurs répondraient à certaines conditions.
+
+### Les Commandes :
+**Lancer les tests une fois :**
+
+`yarn run test`  ou `npm run test`
+
+Lancer les test avec un mode interactive(mode watch) pour recharger les test a temps réel suite a changement de code
+
+
+**Lancer les tests avec un mode interactif(mode  watch)** 
+(Pour recharger les tests a temps réel, suite a changement de code source.)
+
+`yarn run test:watch` ou `npm run test:watch`
+
+*Remarque:*
+\"%npm_execpath%\"
 
 ## TODO
 
@@ -95,5 +116,7 @@ Cette partie est très utile et ça permettrait de voir rapidement et à temps r
     
 -   SSR: Server side rendering
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTc3ODAzNzddfQ==
+eyJoaXN0b3J5IjpbLTM5NTIwODkxMCwtMTg3MDM0NzQyOSw1OD
+gzMzY5NDIsMTY1ODg0MDE1OSwtMzU3MzQ0NjI0LC0xNDU3Nzgw
+Mzc3XX0=
 -->
