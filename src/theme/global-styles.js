@@ -1,16 +1,18 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap');
   html,
   body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color:#003054
+    background-color:#003054;
+    color:#fff
   }
   body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Alegreya Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 `;
 

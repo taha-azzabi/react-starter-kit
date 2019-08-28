@@ -48,7 +48,7 @@ const App = () => (
         <Route path="/404-not-found" component={NotFoundPage} />
         <Redirect to="/404-not-found" />
       </Switch>
-      <Footer className="light">
+      <Footer className="light" fixed>
         <Container>
           <p className="copyright">
             <span>Kit de démarrage ReactJS ©2019</span>
