@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     margin: 0;
     padding: 0;
+    background-color:#003054
   }
   body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;

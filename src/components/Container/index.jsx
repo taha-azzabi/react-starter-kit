@@ -1,3 +1,3 @@
-import { Container } from 'react-bootstrap';
+import { Container } from 'reactstrap';
 
 export default Container;
