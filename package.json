@@ -8,7 +8,7 @@
     "build": "webpack --config config/webpack.config.js --env.env=prod",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "test": "jest --config ./jest.config.json",
-    "test:watch": "yarn run test -- --watch"
+    "test:watch": "node \"%npm_execpath%\" run test -- --watch"
   },
   "keywords": [],
   "author": "Taha Azzabi taha.azzabi@gmail.com",
