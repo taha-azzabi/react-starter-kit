@@ -87,10 +87,9 @@ Cette partie est très utile et ça permettrait de voir rapidement et à temps r
 2.  Activer l’option ````"editor.formatOnSave": true,"eslint.autoFixOnSave": true```` dans les préférences.
     
 ## Tests unitaires:
-Nous utilisons Jest pour tester les composants ReactJs, c'est une solution complète ou plutôt un famerwork pour le testing qui est développé par Facebook.
 Nous utilisons Jest  pour tester les composants  ReactJs, c'est une solution complète ou plutôt un  famerwork  pour le testing qui est développé par Facebook.  
-Jest  possède son propre programme d’exécution des tests(test  runner)  et aussi des utilités pour l'assertion via  expect  
-Assertion : c'est de vérifier que des valeurs répondraient à certaines conditions. 
+Jest  possède son propre programme d’exécution des tests(test  runner)  et aussi des utilités pour l'assertion via  `expect`  
+**Assertion** : Vérifier si des valeurs répondraient à certaines conditions.
 ## TODO
 
 -   Ajouter les configurations nécessaires pour les tests unitaires
@@ -99,6 +98,6 @@ Assertion : c'est de vérifier que des valeurs répondraient à certaines condit
     
 -   SSR: Server side rendering
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MzMzODUwMSwxNjU4ODQwMTU5LC0zNT
+eyJoaXN0b3J5IjpbLTYyNjI5MjEzMCwxNjU4ODQwMTU5LC0zNT
 czNDQ2MjQsLTE0NTc3ODAzNzddfQ==
 -->
