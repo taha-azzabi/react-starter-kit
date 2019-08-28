@@ -94,11 +94,20 @@ Jest  possède son propre programme d’exécution des tests(test  runner)  et a
 
 ### Les Commandes :
 **Lancer les tests une fois :**
-`yarn run test`
+
+`yarn run test`  ou `npm run test`
 
 Lancer les test avec un mode interactive(mode watch) pour recharger les test a temps réel suite a changement de code
-`yarn run test:watch`
-Lancer les tests avec un mode interactif(mode  watch) pour recharger les tests a temps réel, suite a changement de code source.
+
+
+**Lancer les tests avec un mode interactif(mode  watch)** 
+(Pour recharger les tests a temps réel, suite a changement de code source.)
+
+`yarn run test:watch` ou `npm run test:watch`
+
+*Remarque:*
+
+
 ## TODO
 
 -   Ajouter les configurations nécessaires pour les tests unitaires
@@ -107,7 +116,7 @@ Lancer les tests avec un mode interactif(mode  watch) pour recharger les tests a
     
 -   SSR: Server side rendering
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyMzgzMzUzOCwtMTg3MDM0NzQyOSw1OD
-gzMzY5NDIsMTY1ODg0MDE1OSwtMzU3MzQ0NjI0LC0xNDU3Nzgw
-Mzc3LDE5NDA2ODE0NTYsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbNTY0MjU0ODY0LC0xODcwMzQ3NDI5LDU4OD
+MzNjk0MiwxNjU4ODQwMTU5LC0zNTczNDQ2MjQsLTE0NTc3ODAz
+NzcsMTk0MDY4MTQ1Niw3MzA5OTgxMTZdfQ==
 -->
