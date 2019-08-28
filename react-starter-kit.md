@@ -86,7 +86,8 @@ Cette partie est très utile et ça permettrait de voir rapidement et à temps r
     
 2.  Activer l’option ````"editor.formatOnSave": true,"eslint.autoFixOnSave": true```` dans les préférences.
     
-
+## Tests unitaires:
+ 
 ## TODO
 
 -   Ajouter les configurations nécessaires pour les tests unitaires
@@ -95,6 +96,6 @@ Cette partie est très utile et ça permettrait de voir rapidement et à temps r
     
 -   SSR: Server side rendering
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTc3ODAzNzcsMTk0MDY4MTQ1Niw3Mz
-A5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTM1NzM0NDYyNCwtMTQ1Nzc4MDM3NywxOT
+QwNjgxNDU2LDczMDk5ODExNl19
 -->
