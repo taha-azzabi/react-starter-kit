@@ -106,7 +106,7 @@ Lancer les test avec un mode interactive(mode watch) pour recharger les test a t
 `yarn run test:watch` ou `npm run test:watch`
 
 *Remarque:*
-
+\"%npm_execpath%\"
 
 ## TODO
 
@@ -116,7 +116,7 @@ Lancer les test avec un mode interactive(mode watch) pour recharger les test a t
     
 -   SSR: Server side rendering
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY0MjU0ODY0LC0xODcwMzQ3NDI5LDU4OD
-MzNjk0MiwxNjU4ODQwMTU5LC0zNTczNDQ2MjQsLTE0NTc3ODAz
-NzddfQ==
+eyJoaXN0b3J5IjpbLTM5NTIwODkxMCwtMTg3MDM0NzQyOSw1OD
+gzMzY5NDIsMTY1ODg0MDE1OSwtMzU3MzQ0NjI0LC0xNDU3Nzgw
+Mzc3XX0=
 -->
