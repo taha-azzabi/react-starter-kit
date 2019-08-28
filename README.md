@@ -89,6 +89,14 @@ Cette partie est très utile et ça permettrait de voir rapidement et à temps r
 ## Tests unitaires:
 Nous utilisons Jest  pour tester les composants  ReactJs, c'est une solution complète ou plutôt un  famerwork  pour le testing qui est développé par Facebook.  
 Jest  possède son propre programme d’exécution des tests(test  runner)  et aussi un utilité pour l'assertion via  `expect`  
+
+Lancer les tests une fois :
+`yarn run test`
+
+
+`yarn run test:watch`
+
+yarn run test
 **Assertion** : Vérifier si des valeurs répondraient à certaines conditions.
 ## TODO
 
@@ -98,6 +106,6 @@ Jest  possède son propre programme d’exécution des tests(test  runner)  et a
     
 -   SSR: Server side rendering
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg4MzM2OTQyLDE2NTg4NDAxNTksLTM1Nz
-M0NDYyNCwtMTQ1Nzc4MDM3N119
+eyJoaXN0b3J5IjpbLTE4NzAzNDc0MjksNTg4MzM2OTQyLDE2NT
+g4NDAxNTksLTM1NzM0NDYyNCwtMTQ1Nzc4MDM3N119
 -->
