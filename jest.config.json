@@ -1,3 +1,4 @@
 {
-  "name": "kit-de-demarrage-reactjs"
+  "name": "kit-de-demarrage-reactjs",
+  "setupFilesAfterEnv": ["<rootDir>./setupTests.js"]
 }
