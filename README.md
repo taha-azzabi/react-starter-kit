@@ -87,6 +87,7 @@ Cette partie est très utile et ça permettrait de voir rapidement et à temps r
 2.  Activer l’option ````"editor.formatOnSave": true,"eslint.autoFixOnSave": true```` dans les préférences.
     
 ## Tests unitaires:
+Nous utilisons Jest pour tester les composants ReactJs, c'est une solution complète ou plutôt un famerwork pour le testing qui est développé par Facebook.
  
 ## TODO
 
@@ -96,5 +97,6 @@ Cette partie est très utile et ça permettrait de voir rapidement et à temps r
     
 -   SSR: Server side rendering
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NzM0NDYyNCwtMTQ1Nzc4MDM3N119
+eyJoaXN0b3J5IjpbMTY1ODg0MDE1OSwtMzU3MzQ0NjI0LC0xND
+U3NzgwMzc3XX0=
 -->
