@@ -1,0 +1,6 @@
+{
+  "hosting": {
+    "site": "reactjs-starter",
+    "public": "build"
+  }
+}
