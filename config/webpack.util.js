@@ -45,6 +45,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/index.html',
       favicon: './public/favicon.ico',
+      meta: {
+        viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
+      },
     }),
     new webpack.NamedModulesPlugin(),
     new BundleAnalyzerPlugin(),
