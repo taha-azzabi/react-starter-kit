@@ -2,17 +2,19 @@ import React, { Suspense } from 'react';
 import { Helmet } from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
 import { Switch, Route, Redirect, Link } from 'react-router-dom';
-import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem } from 'reactstrap';
+import { Nav, NavbarToggler, Collapse, NavItem } from 'reactstrap';
 
 import theme from '../../theme';
 import GlobalStyle from '../../theme/global-styles';
-import { Container, Footer } from '../../KitUi';
+import { Container, Footer, Logo, NavBar } from '../../KitUi';
 // import HomePage from '../HomePage';
 
 const HomePage = React.lazy(() =>
   import(/* webpackChunkName: "HomePage" */ '../HomePage'),
 );
-const Comment = React.lazy(() => import(/* webpackChunkName: "Comment" */ '../Comment'));
+const AboutPage = React.lazy(() =>
+  import(/* webpackChunkName: "Comment" */ '../AboutPage'),
+);
 const NotFoundPage = React.lazy(() =>
   import(/* webpackChunkName: "NotFoundPage" */ '../NotFoundPage'),
 );
@@ -30,24 +32,23 @@ const App = () => (
           content="Kit de démarrage ReactJS en utilisant les dernières technologie disponible et en mettant l'accent les meilleures pratiques."
         />
       </Helmet>
-      <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">Kit de démarrage ReactJS</NavbarBrand>
+      <NavBar transparent expand="md">
+        <Logo tag={Link} to="/" color="#c6a869" className="logo">
+          Kit de démarrage ReactJS
+        </Logo>
         <NavbarToggler />
         <Collapse navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <Link to="/comment/">comment</Link>
-            </NavItem>
-            <NavItem>
-              <Link to="/404-not-found">404</Link>
+              <Link to="/a-props">à-propos</Link>
             </NavItem>
           </Nav>
         </Collapse>
-      </Navbar>
+      </NavBar>
       <Switch>
         <Suspense fallback={<Loading />}>
           <Route exact path="/" component={HomePage} />
-          <Route path="/comment" component={Comment} />
+          <Route path="/a-props" component={AboutPage} />
           <Route path="/404-not-found" component={NotFoundPage} />
         </Suspense>
         <Redirect to="/404-not-found" />
