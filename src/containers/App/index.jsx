@@ -1,22 +1,23 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { Helmet } from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
-import { Switch, Route, Redirect } from 'react-router-dom';
-import {
-  Navbar,
-  NavbarBrand,
-  Nav,
-  NavbarToggler,
-  Collapse,
-  NavItem,
-  NavLink,
-} from 'reactstrap';
+import { Switch, Route, Redirect, Link } from 'react-router-dom';
+import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem } from 'reactstrap';
+
 import theme from '../../theme';
 import GlobalStyle from '../../theme/global-styles';
 import { Container, Footer } from '../../KitUi';
-import HomePage from '../HomePage';
-import NotFoundPage from '../NotFoundPage';
+// import HomePage from '../HomePage';
 
+const HomePage = React.lazy(() =>
+  import(/* webpackChunkName: "HomePage" */ '../HomePage'),
+);
+const Comment = React.lazy(() => import(/* webpackChunkName: "Comment" */ '../Comment'));
+const NotFoundPage = React.lazy(() =>
+  import(/* webpackChunkName: "NotFoundPage" */ '../NotFoundPage'),
+);
+// import NotFoundPage from '../NotFoundPage';
+const Loading = () => <p>Loading</p>;
 const App = () => (
   <ThemeProvider theme={theme}>
     <Container fluid className="root-app">
@@ -35,17 +36,20 @@ const App = () => (
         <Collapse navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <Link to="/comment/">comment</Link>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+              <Link to="/404-not-found">404</Link>
             </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
       <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/404-not-found" component={NotFoundPage} />
+        <Suspense fallback={<Loading />}>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/comment" component={Comment} />
+          <Route path="/404-not-found" component={NotFoundPage} />
+        </Suspense>
         <Redirect to="/404-not-found" />
       </Switch>
       <Footer className="light" fixed>

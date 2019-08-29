@@ -11,6 +11,7 @@ module.exports = {
     path: path.resolve(__dirname, '../', 'build'),
     // Setting where to output compiled files
     filename: 'static/js/[name].[hash].js',
+    chunkFilename: 'static/js/[name].[chunkhash].js',
     publicPath: '/',
   },
   plugins: [

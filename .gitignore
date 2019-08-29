@@ -24,3 +24,5 @@ firebase-debug.log*
 debug.log
 
 yarn.lock
+
+*.cache
