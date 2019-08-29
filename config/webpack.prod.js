@@ -8,6 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, '../', 'build'),
     publicPath: '/',
     filename: 'static/js/bundle.js',
+    chunkFilename: 'static/js/[name].[chunkhash].js',
   },
   plugins: [
     new Dotenv({
