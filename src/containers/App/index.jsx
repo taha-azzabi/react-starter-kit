@@ -6,8 +6,7 @@ import { Nav, NavbarToggler, Collapse, NavItem } from 'reactstrap';
 
 import theme from '../../theme';
 import GlobalStyle from '../../theme/global-styles';
-import { Container, Footer, Logo, NavBar } from '../../KitUi';
-// import HomePage from '../HomePage';
+import { Container, Footer, Logo, NavBar, Paragraph } from '../../KitUi';
 
 const HomePage = React.lazy(() =>
   import(/* webpackChunkName: "HomePage" */ '../HomePage'),
@@ -18,11 +17,10 @@ const AboutPage = React.lazy(() =>
 const NotFoundPage = React.lazy(() =>
   import(/* webpackChunkName: "NotFoundPage" */ '../NotFoundPage'),
 );
-// import NotFoundPage from '../NotFoundPage';
 const Loading = () => <p>Loading</p>;
 const App = () => (
   <ThemeProvider theme={theme}>
-    <Container fluid className="root-app">
+    <Container fluid className="root-app full-height d-flex flex-column flex-wrap">
       <GlobalStyle />
       <Helmet>
         <meta charSet="utf-8" />
@@ -40,7 +38,7 @@ const App = () => (
         <Collapse navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <Link to="/a-props">à-propos</Link>
+              <Link to="/a-props">A-propos</Link>
             </NavItem>
           </Nav>
         </Collapse>
@@ -53,15 +51,15 @@ const App = () => (
         </Suspense>
         <Redirect to="/404-not-found" />
       </Switch>
-      <Footer className="light" fixed>
+      <Footer className="light" color="#212121" fixed>
         <Container>
-          <p className="copyright">
+          <Paragraph className="copyright my-2" align="center">
             <span>Kit de démarrage ReactJS ©2019</span>
-            <span>|</span>
+            <span> | </span>
             <a href="https://www.datarox.fr/" title="Datarox">
               Datarox
             </a>
-          </p>
+          </Paragraph>
         </Container>
       </Footer>
     </Container>

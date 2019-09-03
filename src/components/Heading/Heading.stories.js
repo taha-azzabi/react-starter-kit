@@ -13,7 +13,7 @@ const AllHeading = () => {
     <div>
       {h.map(level => (
         <Heading key={level} level={level}>
-          Titre H {level}
+          {` Titre H ${level}`}
         </Heading>
       ))}
     </div>

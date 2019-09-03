@@ -14,6 +14,13 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Alegreya Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
   }
+  #root {
+    min-height:100%;
+    height: 100%;
+  }
+  .full-height {
+    height: 100%;
+  }
 `;
 
 export default GlobalStyle;

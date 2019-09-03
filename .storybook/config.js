@@ -1,5 +1,4 @@
 import { configure } from '@storybook/react';
-import 'bootstrap/dist/css/bootstrap.css';
 /*
   * Find and load all files that ends with .stories.js inside the
     src folder and their subdirectories
