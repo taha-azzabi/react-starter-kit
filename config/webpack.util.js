@@ -17,7 +17,6 @@ const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 module.exports = {
-  entry: ['react-hot-loader/patch', './src/index.jsx'],
   module: {
     rules: [
       {

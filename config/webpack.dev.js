@@ -4,6 +4,7 @@ const Dotenv = require('dotenv-webpack');
 module.exports = {
   mode: 'development',
   devtool: 'eval-source-map',
+  entry: ['react-hot-loader/patch', './src/index.jsx'],
   output: {
     // '__dirname' is a Node variable that gives us the absolute
     // path to our current directory.
