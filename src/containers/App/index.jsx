@@ -20,7 +20,7 @@ const NotFoundPage = React.lazy(() =>
 const Loading = () => <p>Loading</p>;
 const App = () => (
   <ThemeProvider theme={theme}>
-    <Container fluid className="root-app full-height d-flex flex-column flex-wrap">
+    <Container fluid className="root-app full-height">
       <GlobalStyle />
       <Helmet>
         <meta charSet="utf-8" />
