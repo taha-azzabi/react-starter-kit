@@ -12,7 +12,8 @@
     //an error: "window" is not defined
     "browser": true,
     "es6": true,
-    "node": true
+    "node": true,
+    "jest": true
   },
   "rules": {
     //To show prettier errors in ESLint and a maximum line length rule
